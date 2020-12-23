@@ -1,0 +1,126 @@
+<config>
+   <title>Leisure Suit Larry 1 VGA</title>
+   <command><![CDATA[[dosbox]
+machine=svga_s3
+memsize=16
+#Amount of video memory in megabytes (0-8).
+#  The maximum resolution and color depth the svga_s3 will be able to display
+#  is determined by this value.
+ #  0: 512k (800x600  at 256 colors)
+#  1: 1024x768  at 256 colors or 800x600  at 64k colors
+#  2: 1600x1200 at 256 colors or 1024x768 at 64k colors or 640x480 at 16M colors
+#  4: 1600x1200 at 64k colors or 1024x768 at 16M colors
+#  8: up to 1600x1200 at 16M colors
+#vmemsize=2
+#Amount of video memory in kilobytes, in addition to vmemsize
+#vmemsizekb=0
+
+[render]
+frameskip=2
+aspect=false
+
+[cpu]
+core=dynamic
+#valid cputypes (Ykhwong SVN):
+#  a)auto
+#  b)386
+#  c)486
+#  d)pentium
+#  e)386_prefetch
+cputype=auto
+cycles=3000
+
+[mixer]
+androidFasterAudio=true
+blocksize=1024
+prebuffer=10
+rate=22050
+
+[midi]
+mpu401=none
+#mpu401=intelligent
+mididevice=mt32
+mt32.romdir=/storage/emulated/0/
+mt32.thread=on
+mt32.analog=0
+
+[speaker]
+pcspeaker=true
+pcrate=11025
+tandy=off
+disney=false
+
+[sblaster]
+sbtype=sb2
+sbmixer=true
+oplmode=opl2
+oplemu=fast
+oplrate=22050
+
+[ipx]
+ipx=false
+
+[serial]
+serial1=disabled
+serial2=disabled
+serial3=disabled
+serial4=disabled
+
+[dos]
+xms=true
+ems=true
+umb=true
+keyboardlayout=auto
+
+[joystick]
+joysticktype=none
+
+[autoexec]
+@Echo Off
+mount c: /mnt/sdcard/
+c:
+]]></command>
+   <cdromlist class="java.util.ArrayList"/>
+   <soundOn>false</soundOn>
+   <memorySize>16</memorySize>
+   <cycles>5000</cycles>
+   <frameskip>1</frameskip>
+   <gusEnabled>false</gusEnabled>
+   <pcspeakerOn>false</pcspeakerOn>
+   <audioRate>44100</audioRate>
+   <ipxAskAtStart>true</ipxAskAtStart>
+   <ipxClientOn>true</ipxClientOn>
+   <ipxClientToIP>127.0.0.1</ipxClientToIP>
+   <ipxClientToPort>2000</ipxClientToPort>
+   <ipxEnabled>false</ipxEnabled>
+   <ipxServerPort>2000</ipxServerPort>
+   <audioBlockSize>1024</audioBlockSize>
+   <audioPreBuffer>15</audioPreBuffer>
+   <xmsOn>true</xmsOn>
+   <emsOn>true</emsOn>
+   <mainProgramParams></mainProgramParams>
+   <midiEnabled>false</midiEnabled>
+   <midiAnalog>0</midiAnalog>
+   <midiDAC>0</midiDAC>
+   <midiPrebuffer>32</midiPrebuffer>
+   <midiRunInThread>true</midiRunInThread>
+   <MidiType>mt32</MidiType>
+   <umbOn>true</umbOn>
+   <nativeJoystickEnabled>false</nativeJoystickEnabled>
+   <nativeJoystickTimed>false</nativeJoystickTimed>
+   <soundBlaster>sb16</soundBlaster>
+   <cpuCore>dynamic</cpuCore>
+   <cdrom_enabled>false</cdrom_enabled>
+   <driveC>/storage/3AA8-AAEA/ROMS/DOS/Leisure suit Larry 1 VGA/</driveC>
+   <mainProgram>/SIERRA.BAT</mainProgram>
+   <serialPort1>disabled</serialPort1>
+   <serialPort1ModemPort>0</serialPort1ModemPort>
+   <setupProgramParams></setupProgramParams>
+   <setupProgram>/INSTALL.EXE</setupProgram>
+   <expertEnabled>false</expertEnabled>
+   <useSvnCore>false</useSvnCore>
+   <aspectOn>false</aspectOn>
+   <automaticPerformance>false</automaticPerformance>
+   <performance>cycles_custom</performance>
+   <unlockSaveState>false</unlockSaveState>
+</config>
