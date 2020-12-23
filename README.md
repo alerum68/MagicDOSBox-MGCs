@@ -1,2 +1,2 @@
 # MagicDOSBox-MGCs
-Collection of MGC configuration files for MagicDOSBox
+Collection of MGC configuration files for MagicDOSBox.
