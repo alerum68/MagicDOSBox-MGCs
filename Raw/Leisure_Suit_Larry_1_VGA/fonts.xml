@@ -1,8 +1,0 @@
-<config>
-   <fonts class="java.util.ArrayList">
-      <ExternalFontItem>
-         <fileName>AakEd</fileName>
-         <title>FreePixel.ttf</title>
-      </ExternalFontItem>
-   </fonts>
-</config>
